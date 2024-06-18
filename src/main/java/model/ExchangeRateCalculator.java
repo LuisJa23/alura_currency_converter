@@ -23,4 +23,6 @@ public class ExchangeRateCalculator {
         double targetCurrencyRate = exchangeRate.get(targetCurrency);
         return (amount / baseCurrencyRate) * targetCurrencyRate;
     }
+
+
 }
