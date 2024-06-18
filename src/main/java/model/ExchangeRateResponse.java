@@ -7,7 +7,7 @@ import java.net.http.HttpResponse;
 import java.util.Map;
 
 public class ExchangeRateResponse {
-    private static final String API_KEY = "4ddc28767c68e1931b10efe3";
+    private static final String API_KEY = "YOUR_API_KEY";
     private static final String URL = "https://v6.exchangerate-api.com/v6/" + API_KEY + "/latest/USD";
     private ExchangeRate exchangeRate;
 

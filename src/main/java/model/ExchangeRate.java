@@ -6,7 +6,7 @@ import com.google.gson.GsonBuilder;
 import java.util.Map;
 
 public class ExchangeRate {
-    private final Map<String, String>  SUPPORTED_CURRENCIES = Map.of(
+    private static final Map<String, String>  SUPPORTED_CURRENCIES = Map.of(
             "USD", "Dólar estadounidense",
             "ARS", "Peso argentino",
             "BRL", "Real brasileño",
@@ -35,4 +35,10 @@ public class ExchangeRate {
         }
         return conversionRatesValue;
     }
+
+    public static Map<String, String> getSupportedCurrencies() {
+        return SUPPORTED_CURRENCIES;
+    }
+
+
 }
